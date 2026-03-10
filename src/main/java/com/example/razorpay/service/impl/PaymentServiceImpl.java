@@ -68,7 +68,16 @@ public class PaymentServiceImpl implements PaymentService {
 
     @Override
     public String verifyPayment(VerifyPaymentRequestDto dto) {
+
+        System.out.println("OrderId: " + dto.getRazorpayOrderId());
+        System.out.println("PaymentId: " + dto.getRazorpayPaymentId());
+        System.out.println("Signature: " + dto.getRazorpaySignature());
+
         try {
+
+            if(dto.getRazorpayPaymentId()==null || dto.getRazorpaySignature()==null){
+                throw new PaymentException("Payment details missing");
+            }
 
             String payload = dto.getRazorpayOrderId() + "|" + dto.getRazorpayPaymentId();
 
@@ -94,7 +103,8 @@ public class PaymentServiceImpl implements PaymentService {
             return "Payment verified successfully";
 
         }catch (Exception e){
-            throw new PaymentException("Payment verification failed");
+            e.printStackTrace();
+            throw new PaymentException("Payment verification failed : " + e.getMessage());
         }
     }
 }
