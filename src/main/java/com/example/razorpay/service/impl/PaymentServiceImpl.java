@@ -70,9 +70,12 @@ public class PaymentServiceImpl implements PaymentService {
 
         try {
 
-            String orderId = dto.getRazorpayOrderId().trim();
-            String paymentId = dto.getRazorpayPaymentId().trim();
-            String signature = dto.getRazorpaySignature().trim();
+          //  String orderId = dto.getRazorpayOrderId().trim();
+           // String paymentId = dto.getRazorpayPaymentId().trim();
+           // String signature = dto.getRazorpaySignature().trim();
+            String orderId = dto.getRazorpayOrderId();
+            String paymentId = dto.getRazorpayPaymentId();
+            String signature = dto.getRazorpaySignature();
 
             System.out.println("OrderId: " + orderId);
             System.out.println("PaymentId: " + paymentId);
