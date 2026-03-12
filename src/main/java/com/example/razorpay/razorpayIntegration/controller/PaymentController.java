@@ -1,9 +1,9 @@
-package com.example.razorpay.controller;
+package com.example.razorpay.razorpayIntegration.controller;
 
-import com.example.razorpay.dto.request.CreateOrderRequestDto;
-import com.example.razorpay.dto.request.VerifyPaymentRequestDto;
-import com.example.razorpay.dto.response.PaymentResponseDto;
-import com.example.razorpay.service.PaymentService;
+import com.example.razorpay.razorpayIntegration.dto.request.CreateOrderRequestDto;
+import com.example.razorpay.razorpayIntegration.dto.request.VerifyPaymentRequestDto;
+import com.example.razorpay.razorpayIntegration.dto.response.PaymentResponseDto;
+import com.example.razorpay.razorpayIntegration.service.PaymentService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

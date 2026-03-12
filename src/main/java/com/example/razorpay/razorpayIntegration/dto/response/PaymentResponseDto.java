@@ -1,4 +1,4 @@
-package com.example.razorpay.dto.response;
+package com.example.razorpay.razorpayIntegration.dto.response;
 
 import lombok.Data;
 

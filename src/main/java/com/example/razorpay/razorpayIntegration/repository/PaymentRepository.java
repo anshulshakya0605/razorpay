@@ -1,6 +1,6 @@
-package com.example.razorpay.repository;
+package com.example.razorpay.razorpayIntegration.repository;
 
-import com.example.razorpay.entity.PaymentOrder;
+import com.example.razorpay.razorpayIntegration.entity.PaymentOrder;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
