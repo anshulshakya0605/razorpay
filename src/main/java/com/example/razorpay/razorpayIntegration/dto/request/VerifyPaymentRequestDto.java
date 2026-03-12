@@ -8,15 +8,15 @@ import lombok.Data;
 public class VerifyPaymentRequestDto {
 
     @NotBlank
-//    @JsonProperty("razorpay_order_id")
+    @JsonProperty("razorpayOrderId")
     private String razorpayOrderId;
 
     @NotBlank
-//    @JsonProperty("razorpay_payment_id")
+    @JsonProperty("razorpayPaymentId")
     private String razorpayPaymentId;
 
     @NotBlank
-//    @JsonProperty("razorpay_signature")
+    @JsonProperty("razorpaySignature")
     private String razorpaySignature;
 
 }
