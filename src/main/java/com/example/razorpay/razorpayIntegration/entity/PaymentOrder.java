@@ -1,4 +1,4 @@
-package com.example.razorpay.entity;
+package com.example.razorpay.razorpayIntegration.entity;
 
 import com.example.razorpay.util.BaseEntity;
 import jakarta.persistence.Entity;

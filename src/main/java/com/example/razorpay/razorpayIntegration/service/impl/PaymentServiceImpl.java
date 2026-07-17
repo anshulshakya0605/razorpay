@@ -1,13 +1,13 @@
-package com.example.razorpay.service.impl;
+package com.example.razorpay.razorpayIntegration.service.impl;
 
 import com.example.razorpay.config.RazorpayConfig;
-import com.example.razorpay.dto.request.CreateOrderRequestDto;
-import com.example.razorpay.dto.request.VerifyPaymentRequestDto;
-import com.example.razorpay.dto.response.PaymentResponseDto;
-import com.example.razorpay.entity.PaymentOrder;
+import com.example.razorpay.razorpayIntegration.dto.request.CreateOrderRequestDto;
+import com.example.razorpay.razorpayIntegration.dto.request.VerifyPaymentRequestDto;
+import com.example.razorpay.razorpayIntegration.dto.response.PaymentResponseDto;
+import com.example.razorpay.razorpayIntegration.entity.PaymentOrder;
 import com.example.razorpay.exception.PaymentException;
-import com.example.razorpay.repository.PaymentRepository;
-import com.example.razorpay.service.PaymentService;
+import com.example.razorpay.razorpayIntegration.repository.PaymentRepository;
+import com.example.razorpay.razorpayIntegration.service.PaymentService;
 import com.razorpay.Order;
 import com.razorpay.RazorpayClient;
 import com.razorpay.Utils;
@@ -15,8 +15,6 @@ import lombok.RequiredArgsConstructor;
 import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.UUID;
 
 @Service
